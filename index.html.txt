@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dear Riya</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <div id="page1" class="page">
+    <p>
+      Dear Riya,<br /><br />
+      This message is from his Highness Gurjass Singh Suri the First!<br />
+      We understand how valuable your time is and how much you cherish your weekends.<br />
+      Which is why we’d like to ask for 2.5–3 hours of your time...
+    </p>
+    <button onclick="goToPage(2)">Continue</button>
+  </div>
+
+  <div id="page2" class="page hidden">
+    <h2>Are you free on Sunday, April 13th?</h2>
+    <div class="options">
+      <button id="yesBtn" onclick="goToPage(3)">Yes</button>
+      <button id="noBtn" onclick="swapNo()">No</button>
+    </div>
+  </div>
+
+  <div id="page3" class="page hidden">
+    <h2>How would you like to spend those hours?</h2>
+    <div class="options">
+      <button onclick="submitChoice('Brunch')">Brunch</button>
+      <button onclick="submitChoice('Lunch')">Lunch</button>
+      <button onclick="submitChoice('An Evening Outing')">An Evening Outing</button>
+      <button onclick="submitChoice('Dinner')">Dinner</button>
+    </div>
+  </div>
+
+  <div id="page4" class="page hidden">
+    <h2>Yaayyy! 🎉</h2>
+    <p>Thank you for giving him this precious time of your life 💖</p>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
